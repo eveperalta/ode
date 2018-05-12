@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900" rel="stylesheet">
 
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- flaticon css -->
     <link rel="stylesheet" href="css/flaticon.css">
@@ -71,7 +71,68 @@
         </div>
     </div>
     <!-- =========== Preloader End ============ -->
-     <!-- ======================================= 
+    <!-- ======================================= 
+            ==Start Popup search section==  
+        =======================================
+    <div id="custom_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <img src="images/search_popup_logo.png" alt="search_popup_logo">
+            <form action="" class="form-inline">
+                <input type="text" name="search" placeholder="Search here...">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+            <div class="quick_search">
+                <h6 class="color_ff pos_relative ptb_30">Quick search</h6>
+                <ul>
+                    <li><a href="#">parlour</a></li>
+                    <li><a href="#">massage</a></li>
+                    <li><a href="#">yoga</a></li>
+                    <li><a href="#">spa</a></li>
+                    <li><a href="#">beauty</a></li>
+                    <li><a href="#">exparts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- ======================================= 
+            ==End Popup search section==  
+    =======================================-->
+
+    <!-- ======================================= 
+            ==Start quick book section==  
+    =======================================-->
+    <div class="quick_booking session_booking_wrapper">
+        <p class="click_btn text-capitalize">Reservacion</p>
+        <p class="title">Agende su cita, reciba su servicio a Domicilio</p>
+        <form action="book.php" method="post" class="clearfix">
+            <input type="text" class="form-control" id="client_name" placeholder="Nombre" required />
+            <input type="text" class="form-control" id="phone_number" placeholder="Telefono" required />
+            <input type="email" class="form-control" id="client_Email" placeholder="Email" required />
+
+            <div class="input-group date form-control" id="datetimepicker2">
+                <input type="text" readonly="readonly" class="form-control" placeholder="Dia y Hora" required />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+
+            <select class="form-control wide mr_30" name="beauty-service" required>
+                <option selected>Servicio</option>
+                <option value="facial">Facial</option>
+                <option value="nailCare">Manicure/Pedicure</option>
+                <option value="eyeCare">Pestañas</option>
+                <option value="waxing">Depilacion</option>
+                <option value="makeup">Capilar</option>
+            </select>
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+    <!-- ======================================= 
+            ==End quick book section==  
+    =======================================-->
+
+    <!-- ======================================= 
             ==Start Header section==  
     =======================================-->
     <section class="header_top">
@@ -79,7 +140,7 @@
             <div class="row">
                 <div class="col-md-12 clearfix">
                     <div class="opening_time pull-left"><i class="fa fa-clock-o color_d5"></i> <span class="color_dd">Horario: lun - Sab : 09:00 - 21:00</span> </div>
-                    <div class="contact_mail pull-right"> <a href="mailto:info@oficinadelaestetica.cl" class="color_dd"><i class="fa fa-envelope color_d5"></i>info@oficinadelaestetica.cl</a> <span>/</span> <a href="callto:+569822-39304" class="color_dd"><i class="fa fa-phone color_d5"></i>+569822-39304</a> </div>
+                    <div class="contact_mail pull-right"> <a href="#" class="color_dd"><i class="fa fa-envelope color_d5"></i>info@oficinadelaestetica.cl</a> <span>/</span> <a href="#" class="color_dd"><i class="fa fa-phone color_d5"></i>+569822-39304</a> </div>
                 </div>
             </div>
         </div>
@@ -91,23 +152,37 @@
                 <div class="col-md-12">
                     <div class="beauty">
                         <div id="menuzord" class="menuzord">
-                            <a href="index2.html" class="menuzord-brand"><img id="logo" src="images/logoeve.png" class="logo" alt="logo"></a>
+                            <a href="index.html" class="menuzord-brand"><img id="logo" src="images/logoeve.png" class="logo" alt="logo"></a>
                             <ul class="menuzord-menu menuzord-right">
                                 <li><a href="index.html" title="Home">Home</a></li>
                                  
                                 <li><a href="#" title="Service">Servicios</a>
                                     <ul class="dropdown triangle">
-                                        <li><a href="servicio1.html">Uñas</a></li>
-                                        <li><a href="servicio4.html">Depilación</a></li>
-                                        <li><a href="servicio3.html">Tratamientos Capilares</a></li>
-                                        <li><a href="servicio2.html">Tratamientos Faciales</a></li>
-                                        <li><a href="servicio5.html">Pestañas y Cejas</a></li>
+                                        <li><a href="service_details.html">Manicure</a></li>
                                     </ul>
+                                </li>
+                                <li><a href="booking.html" title="Booking">Reservacion</a></li>
                                 </li>
                                 <li><a href="#" title="Shop">Tienda</a>
                                     <div class="megamenu">
                                         <div class="megamenu-row">
-                                 <div class="col3 clearfix">
+                                          <!--  <div class="col3 clearfix">
+                                                <ul>
+                                                    <li>
+                                                        <h6>Shop Full Width</h6>
+                                                    </li>
+                                                    <li><a href="shop_fullwidth.html">Shop Full Width (4 Column)</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <h6>Shop With Sidebar</h6>
+                                                    </li>
+                                                    <li><a href="shop_left_sidebar.html">Shop (Left Sidebar)</a></li>
+                                                    <li><a href="shop_right_sidebar.html">Shop (Right Sidebar)</a></li>
+                                                </ul>
+                                            </div>-->
+
+                                            <div class="col3 clearfix">
                                                 <ul>
                                                     <li>
                                                         <h6>Insumos para Salones</h6>
@@ -146,7 +221,17 @@
                                     </div>
                                 </li>
                                 <li><a href="blog_left_sidebar.html" title="Blog">Blog</a>
-                                     </li>
+                                   <!-- <ul class="dropdown triangle">
+                                        <li><a href="#">Blog pages</a>
+                                            <ul class="dropdown dropdown-left">
+                                                <li><a href="blog_fullwidth_1Col.html">Blog full width</a></li>
+                                                <li><a href="blog_fullwidth_2Col.html">Blog full width Grid</a></li>
+                                                <li><a href="blog_left_sidebar_1Col.html">Blog left sidebar (1 Column)</a></li>
+                                                <li><a href="blog_left_sidebar_2Col.html">Blog left sidebar (2 Column)</a></li>
+                                                <li><a href="blog_right_sidebar_1Col.html">Blog Right sidebar (1 Column)</a></li>
+                                                <li><a href="blog_right_sidebar_2Col.html">Blog right sidebar (2 Column)</a></li>
+                                            </ul>-->
+                                        </li>
                                         <li><a href="contact.php" title="Contact">Contacto</a></li>
                                     </ul>
                                 </li>
@@ -166,6 +251,7 @@
             ==End Header section==  
     =======================================-->
 
+
     <!-- ======================================= 
             ==Start Hero section version-1==  
         =======================================-->
@@ -173,7 +259,7 @@
         <div class="Modern-Slider">
             <!-- Item 1-->
             <div class="item">
-                <div class="img-fill"> <img src="images/slider_img/slider_img4.jpg" alt="slider_img1">
+                <div class="img-fill"> <img src="images/slider_img/slider_img1.jpg" alt="slider_img1">
                     <div class="info">
                         <div class="slider_overlay"></div>
                         <div class="section_tbl">
@@ -182,12 +268,12 @@
                                     <div class="row">
                                         <div class="col-md-12 clearfix pl_40 pr_40">
                                             <div class="slider_content caption_left color_ff">
-                                                <h4>Belleza de manos</h4>
-                                                <h3 class="color_d5 fw_700">en 20 minutos en la oficina</h3>
-                                                <h5 class="text-left">Estar linda no requiere horas extras!.</h5>
+                                                <h4>Oficina de la Estética</h4>
+                                                <h3 class="color_d5 fw_700">Peluqueria & Estética </h3>
+                                                <h5 class="text-left">A Domicilio</h5>
                                                 <ul class="slider_button">
                                                     <li>
-                                                        <a href="#book" class="blue_btn fw_700">Agende su Cita</a>
+                                                        <a href="#" class="blue_btn fw_700">Conozcanos</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -222,7 +308,7 @@
                                                 <h5 class="text-left">Elimina el vello no deseado con Depilación Progresiva IPL</h5>
                                                 <ul class="slider_button">
                                                     <li>
-                                                        <a href="#book" class="blue_btn fw_700">Agende su Cita</a>
+                                                        <a href="#" class="blue_btn fw_700">Agende su Cita</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -257,7 +343,7 @@
                                                 <h5 class="text-left"> Escoge entre nuestro amplio catalogo de tratamientos capilares. Seguro que hay uno para ti!.</h5>
                                                 <ul class="slider_button">
                                                     <li>
-                                                        <a href="#servicios" class="blue_btn fw_700">Ver mas</a>
+                                                        <a href="#" class="blue_btn fw_700">Ver mas</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -274,6 +360,41 @@
                     <!--/info-->
                 </div>
             </div>
+
+            <!-- Item 4-->
+            <div class="item">
+                <div class="img-fill"> <img src="images/slider_img/slider_img4.jpg" alt="slider_img1">
+                    <div class="info">
+                        <div class="slider_overlay"></div>
+                        <div class="section_tbl">
+                            <div class="section_tbl_cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 clearfix pl_40 pr_40">
+                                            <div class="slider_content caption_left color_ff">
+                                                <h4>Belleza de manos</h4>
+                                                <h3 class="color_d5 fw_700">en 20 minutos en la oficina</h3>
+                                                <h5 class="text-left">Estar linda no requiere horas extras!.</h5>
+                                                <ul class="slider_button">
+                                                    <li>
+                                                        <a href="#" class="blue_btn fw_700">Agende su Cita</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/col-->
+                                    </div>
+                                </div>
+                                <!--/container-->
+                            </div>
+                            <!--/tbl-cell -->
+                        </div>
+                        <!--/section_tbl-->
+                    </div>
+                    <!--/info-->
+                </div>
+            </div>
+            <!-- // Item -->
         </div>
         <!--/Modern-Slider-->
     </section>
@@ -282,9 +403,105 @@
     =======================================-->
 
     <!-- ======================================= 
+            ==start welcome section== 
+    =======================================
+    <section class="welcom_section pos_relative pt_90 pb_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title text-center">
+                        <h3 class="color_72 fw_500 pb_5">Welcome To Beauty Lab</h3>
+                        <p>The beauty lab is a luxury beauty & spa solution. The beauty spa strives to deliver top class treatments in a relaxing environment.</p>
+                    </div>
+                </div>
+            </div>
+            <!/row-->
+
+         <!--   <div class="row">
+                <div class="col-md-7">
+                    <div class="welcome_feature_wrapper clearfix">
+                        <!feature-1-->
+                      <!--  <div class="single_feature pull-left ptb_35">
+                            <i class="flaticon-health-care"></i>
+                            <div class="feature_content pl_40 pr_40">
+                                <a href="#" class="color_33 fw_500 pb_15">Expert Doctors</a>
+                                <div class="divider"></div>
+                                <p class="pt_15">As you might have guessed, most designers choose this unit arbitrarily. </p>
+                            </div>
+                        </div>
+
+                        <!feature-2
+                        <div class="single_feature pull-left ptb_35">
+                            <i class="flaticon-flask"></i>
+                            <div class="feature_content pl_40 pr_40">
+                                <a href="#" class="color_33 fw_500 pb_15">Latest Technology</a>
+                                <div class="divider"></div>
+                                <p class="pt_15">As you might have guessed, most designers choose this unit arbitrarily. </p>
+                            </div>
+                        </div>
+
+                        <!feature-3
+                        <div class="single_feature pull-left ptb_35">
+                            <i class="flaticon-graduate-diploma"></i>
+                            <div class="feature_content pl_40 pr_40">
+                                <a href="#" class="color_33 fw_500 pb_15">Certified Institute</a>
+                                <div class="divider"></div>
+                                <p class="pt_15">As you might have guessed, most designers choose this unit arbitrarily. </p>
+                            </div>
+                        </div>
+
+                        <!feature-4
+                        <div class="single_feature pull-left ptb_35">
+                            <i class="flaticon-school-calendar"></i>
+                            <div class="feature_content pl_40 pr_40">
+                                <a href="#" class="color_33 fw_500 pb_15">Online Appointment</a>
+                                <div class="divider"></div>
+                                <p class="pt_15">As you might have guessed, most designers choose this unit arbitrarily. </p>
+                            </div>
+                        </div>
+                        <!/feature
+                    </div>
+                    <!/wrapper-->
+                <!--</div>
+                /col-->
+
+               <!-- <div class="col-md-4">
+                    <div class="welcome_carousel_wrapper pos_relative">
+                        <div id="carousel_img">
+                            <img src="images/welcome_carousel2.jpg" class="img img-responsive" alt="welcome_carousel_img">
+                            <img src="images/welcome_carousel3.jpg" class="img img-responsive" alt="welcome_carousel_img">
+                            <img src="images/welcome_carousel1.jpg" class="img img-responsive" alt="welcome_carousel_img">
+                        </div>
+
+                        <div id="carousel_text">
+                            <p>
+                                Instead of relying on arbitrary selection, wouldn’t it be nice if there were a way to determine the perfect typography.
+                                <a href="#" class="read_more color_ff fw_700">Read more</a>
+                            </p>
+                            <p>
+                                Instead of relying on arbitrary selection, wouldn’t it be nice if there were a way to determine the perfect typography.
+                                <a href="#" class="read_more color_ff fw_700">Read more</a>
+                            </p>
+                            <p>
+                                Instead of relying on arbitrary selection, wouldn’t it be nice if there were a way to determine the perfect typography.
+                                <a href="#" class="read_more color_ff fw_700">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                    /wrapper-->
+               <!-- </div>
+                /col-->
+          <!--  </div>
+        </div>
+    </section>
+    <! ======================================= 
+            ==End welcome section== 
+    =======================================-->
+
+    <!-- ======================================= 
             ==Start Service section== 
     =======================================-->
-    <section class="service_section pt_90 pb_70" id="servicios">
+    <section class="service_section pt_90 pb_70">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -299,56 +516,6 @@
 
             <div class="row">
                 <div class="service_wrapper mt_65">
-                  <!--service-5-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="single_service">
-                            <div class="img"><img src="images/service_img5.jpg" alt="service_img" class="img img-responsive"></div>
-                            <div class="img_over_content text-center">
-                                
-                                
-                                <a href="servicio1.html" class="fw_500 color_33 mtb_15">Uñas</a>
-                                <div class="divider"></div>
-                                <br>
-                                <br>
-                                <p>Esmaltado permanente y Tradicional.</p>
-                                <p>Uñas PolyGel</p>
-                                <p>Uñas Acrílicas</p>
-                                <p>Pedicure</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--service-6-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="single_service">
-                            <div class="img"><img src="images/service_img6.jpg" alt="service_img" class="img img-responsive"></div>
-                            <div class="img_over_content text-center">
-                                
-                                
-                                <a href="servicio4.html" class="fw_500 color_33 mtb_15">Depilación</a>
-                                <div class="divider"></div>
-                                <br>
-                                <br>
-                                <p>Tradicional o IPL.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/col-->
-<!--service-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="single_service">
-                            <div class="img"><img src="images/service_img4.jpg" alt="service_img" class="img img-responsive"></div>
-                            <div class="img_over_content text-center">
-                               
-                                
-                                <a href="servicio3.html" class="fw_500 color_33 mtb_15">Tratamientos Capilares</a>
-                                <div class="divider"></div>
-                                <br>
-                                <br>
-                                <p>Keratina, Botox, Olapex y mucho más!.</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--service-1-->
                     <div class="col-md-4 col-sm-6">
@@ -357,7 +524,7 @@
                             <div class="img_over_content text-center">
                                 
                                 
-                                <a href="servicio2.html" class="fw_500 color_33 mtb_15">Tratamientos Faciales</a>
+                                <a href="#" class="fw_500 color_33 mtb_15">Tratamientos Faciales</a>
                                 <div class="divider"></div>
                                 <br>
                                 <br>
@@ -390,15 +557,64 @@
                             <div class="img_over_content text-center">
                                 
                                 
-                                <a href="servicio5.html" class="fw_500 color_33 mtb_15">Pestañas y Cejas</a>
+                                <a href="#" class="fw_500 color_33 mtb_15">Pestañas</a>
                                 <div class="divider"></div>
                                 <br>
                                 <br>
                                 <p>Lifting, Ondulación y tinte.</p>
-                                <p>Perfilado y tinte de Cejas</p>
                             </div>
                         </div>
                     </div>
+
+                    <!--service-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single_service">
+                            <div class="img"><img src="images/service_img4.jpg" alt="service_img" class="img img-responsive"></div>
+                            <div class="img_over_content text-center">
+                               
+                                
+                                <a href="#" class="fw_500 color_33 mtb_15">Tratamientos Capilares</a>
+                                <div class="divider"></div>
+                                <br>
+                                <br>
+                                <p>Keratina, Botox, Olapex y mucho más!.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--service-5-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single_service">
+                            <div class="img"><img src="images/service_img5.jpg" alt="service_img" class="img img-responsive"></div>
+                            <div class="img_over_content text-center">
+                                
+                                
+                                <a href="#" class="fw_500 color_33 mtb_15">Manicure & Pedicure</a>
+                                <div class="divider"></div>
+                                <br>
+                                <br>
+                                <p>Esmaltado permanente y Tradicional.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--service-6-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single_service">
+                            <div class="img"><img src="images/service_img6.jpg" alt="service_img" class="img img-responsive"></div>
+                            <div class="img_over_content text-center">
+                                
+                                
+                                <a href="#" class="fw_500 color_33 mtb_15">Depilación</a>
+                                <div class="divider"></div>
+                                <br>
+                                <br>
+                                <p>Tradicional o IPL.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+
                 </div>
                 <!--/service wrapper-->
             </div>
@@ -413,7 +629,7 @@
     <!-- ======================================= 
             ==start Seassion booking section== 
         =======================================-->
-    <section class="session_booking_section pt_90 pb_100 pt_sm_60 pb_sm_70" id="book">
+    <section class="session_booking_section pt_90 pb_100 pt_sm_60 pb_sm_70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-4 col-md-9 col-md-offset-3">
@@ -443,7 +659,15 @@
                                     <option value="waxing">Depilacion</option>
                                     <option value="makeup">Capilar</option>
                                 </select>
- <textarea name="msg-area" id="booking-msg" cols="30" rows="4" placeholder="Mensaje (Opcional)"></textarea>
+
+                          <!--  <select class="form-control wide" name="beauty-expart" required>
+                                    <option selected>Beauty Expart</option>
+                                    <option value="sokhina">Hero Alom</option>
+                                    <option value="jorina">Apo Biswas</option>
+                                    <option value="jerin">Jerin Shikdar</option>
+                                    <option value="jerin">Subrina Tasnim</option>
+                                </select>-->
+                            <textarea name="msg-area" id="booking-msg" cols="30" rows="4" placeholder="Mensaje (Opcional)"></textarea>
                             <button type="submit">Agendar Cita</button>
                         </form>
                     </div>
@@ -454,10 +678,117 @@
     <!-- ======================================= 
             ==End Seassion booking section== 
     =======================================-->
- <!-- ======================================= 
+    <!-- ======================================= 
+            ==Start beauty lab gallery section==  
+    =======================================
+    <section class="beautyLab_gallery_section pt_90 pb_75">
+        <div class="beautyLab_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title mb_60 text-center">
+                        <h3 class="color_ff fw_500 pb_10">Our Beauty Lab</h3>
+                        <p class="color_ff">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore etc</p>
+                    </div>
+                </div>
+            </div>
+            row-->
+
+           <!-- <div class="row">
+                <ul class="feltering_menu pl_15">
+                    <li class="filter active" data-filter="all">All</li>
+                    <li class="filter" data-filter=".category_1">Beauty Treatment</li>
+                    <li class="filter" data-filter=".category_2">Beauty Interiors</li>
+                </ul>
+
+                <div class="gallery_wrapper">
+
+                    gallery-1-->
+                 <!--   <div class="col-md-4 col-sm-6  mix category_2">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg1.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!gallery-2-->
+                  <!--  <div class="col-md-4 col-sm-6  mix category_1">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg2.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!gallery-3-->
+                  <!--  <div class="col-md-4 col-sm-6  mix category_2">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg3.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!gallery-4-->
+                  <!--  <div class="col-md-4 col-sm-6  mix category_1">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg4.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!gallery-5-->
+                <!--    <div class="col-md-4 col-sm-6  mix category_2">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg5.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!gallery-6-->
+                 <!--   <div class="col-md-4 col-sm-6  mix category_1">
+                        <div class="single_gallery">
+                            <img src="images/beauty_galleryImg6.jpg" alt="gallery image" class="img img-responsive" />
+                            <div class="single_gallery_overlay text-center">
+                                <h6><a href="#" class="color_ff fw_500">Beauty Treatment</a></h6>
+                                <div class="divider mt_15 mb_10"></div>
+                                <p class="color_ff">Most designers set their type arbitrarily, either by pulling values</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!/col-->
+               <!-- </div>
+                /gallery wrapper-->
+           <!-- </div>
+            /row
+        </div>
+    </section>-->
+    <!-- ======================================= 
+            ==End beauty lab gellary section== 
+    =======================================-->
+
+    <!-- ======================================= 
             ==Start Product Carousel Section==  
         =======================================-->
-    <section class="product_carousel_section pt_90 pb_100" id="producto">
+    <section class="product_carousel_section pt_90 pb_100">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -559,6 +890,146 @@
     <!-- ======================================= 
             ==End Product Carousel section== 
         =======================================-->
+
+    <!-- ======================================= 
+            ==Start price list section==  
+    =======================================
+    <section class="priceing_section pt_90 pb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title pb_60 text-center">
+                        <h3 class="color_72 fw_500 pb_10">Price List</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et.</p>
+                    </div>
+
+                    <div class="price_list_tab">
+                         Nav tabs 
+                        <ul class="tab_menu" role="tablist">
+                            <li role="presentation"><a href="#beautyTreatment" aria-controls="beautyTreatment" role="tab" data-toggle="tab">Beauty Treatment</a></li>
+                            <li role="presentation"><a href="#makeUp" aria-controls="makeUp" role="tab" data-toggle="tab">Make-up</a></li>
+                            <li role="presentation" class="active"><a href="#spaTherapy" aria-controls="spaTherapy" role="tab" data-toggle="tab">Spa Therapy</a></li>
+                            <li role="presentation"><a href="#hairTreatment" aria-controls="hairTreatment" role="tab" data-toggle="tab">Hair Treatment</a></li>
+                            <li role="presentation"><a href="#specialOffers" aria-controls="specialOffers" role="tab" data-toggle="tab">Special Offers</a></li>
+                        </ul>-->
+
+                        <!-- Tab panes
+                        <div class="tab-content pt_60"> -->
+                            <!-- tab-pannel 1 
+                            <div role="tabpanel" class="tab-pane fade in clearfix" id="beautyTreatment">
+                                <div class="single_price_list stone-therapy pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Stone Therapy </a><span>$1</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list massage-therapie pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Massage Therapies</a> <span>$65</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list body-bassage pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Body Massage</a> <span>$85</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list pedicure-manicure pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Pedicure & Manicure</a> <span>$32</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                            </div>-->
+
+                            <!-- tab-pannel 2 
+                            <div role="tabpanel" class="tab-pane fade in clearfix" id="makeUp">
+                                <div class="single_price_list stone-therapy pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Stone Therapy </a><span>$101</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list massage-therapie pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Massage Therapies</a> <span>$65</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list body-bassage pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Body Massage</a> <span>$85</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list pedicure-manicure pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Pedicure & Manicure</a> <span>$32</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                            </div>-->
+
+
+                            <!-- tab-pannel 3 
+                            <div role="tabpanel" class="tab-pane fade in active clearfix" id="spaTherapy">
+                                <div class="single_price_list stone-therapy pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Stone Therapy </a><span>$15</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list body-bassage pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Body Massage</a> <span>$185</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list massage-therapie pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Massage Therapies</a> <span>$65</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list pedicure-manicure pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Pedicure & Manicure</a> <span>$32</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                            </div>-->
+
+
+                            <!-- tab-pannel 4 
+                            <div role="tabpanel" class="tab-pane fade in clearfix" id="hairTreatment">
+                                <div class="single_price_list stone-therapy pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Stone Therapy </a><span>$15</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list massage-therapie pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Massage Therapies</a> <span>$605</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list pedicure-manicure pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Pedicure & Manicure</a> <span>$32</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list body-bassage pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Body Massage</a> <span>$850</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                            </div>-->
+
+
+                         <!--    tab-pannel 5
+                            <div role="tabpanel" class="tab-pane fade in clearfix" id="specialOffers">
+                                <div class="single_price_list massage-therapie pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Massage Therapies</a> <span>$651</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list stone-therapy pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Stone Therapy </a><span>$101295</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list body-bassage pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Body Massage</a> <span>$845</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                                <div class="single_price_list pedicure-manicure pull-left">
+                                    <h6><a href="#" class="fw_500 pb_10">Pedicure & Manicure</a> <span>$312</span></h6>
+                                    <p class="color_51">Most designers set their type arbitrarily, either by pulling values out of the sky or by adhering to a baseline grid.</p>
+                                </div>
+                            </div>
+                         /tab-pannel-->
+                      <!--   </div>
+                        <a href="#" class="booking-now wow fadeInUp" data-wow-duration="1.5s">Book A Session Now</a>
+                    </div>
+                </div>
+               /row-->
+         <!--   </div>
+    </section>
+     ======================================= 
+            ==End price list section== 
+    =======================================-->
+
+   
 
     <!-- ======================================= 
             ==Start Blog section==  
@@ -689,8 +1160,8 @@
                         <p> Oficina de la Estetica, Estética a su medida</p>
                         <address>
                                 <p class="address"><i class="fa fa-home"></i><span>Oficina Central:</span> Monjitas 520, ofc 19 Santiago.</p>
-                                <p class="phone"><i class="fa fa-phone"></i><span>Contacto:</span><a href="callto:+56-982239304">+56-982239304</a> </p>
-                                <p class="email"><i class="fa fa-envelope"></i><span>Email:</span> <a href="mailto:info@oficinadelaestetica.cl">info@oficinadelaestetica.cl</a></p>
+                                <p class="phone"><i class="fa fa-phone"></i><span>Contacto:</span> +56-982239304</p>
+                                <p class="email"><i class="fa fa-envelope"></i><span>Email:</span> <a href="#">info@oficinadelaestetica.cl</a></p>
                             
                             </address>
                     </div>
