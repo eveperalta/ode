@@ -61,7 +61,7 @@ if(isset($_POST['submit'])) { // Checking null values in message.
 			E-mail: $email
 			subject: $subject
 			Message: $message "; /* Send the message using mail() function */
-			if(mail("support@theme_builder.com", $header, $msg1 )){
+			if(mail("info@oficinadelaestetica.cl", $header, $msg1 )){
 				$_SESSION['successMessage'] = "Message sent successfully.";
 				$successMessage = $_SESSION['successMessage'];
 			}else{
