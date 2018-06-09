@@ -41,7 +41,6 @@
     <link rel="stylesheet" href="css/padding.margin.css">
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css"> </head>
 
@@ -76,10 +75,10 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="beauty">
                         <div id="menuzord" class="menuzord">
-                            <a href="index2.html" class="menuzord-brand"><img id="logo" src="images/logoeve.png" class="logo" alt="logo"></a>
+                            <a href="index.html" class="menuzord-brand"><img id="logo" src="images/logoeve.png" class="logo" alt="logo"></a>
                             <ul class="menuzord-menu menuzord-right">
-                                <li><a href="index2.html" title="Home">Home</a></li>
-                                <li><a href="index2.html" title="Servicios">Servicios</a>
+                                <li><a href="index.html" title="Home">Home</a></li>
+                                <li><a href="index.html" title="Servicios">Servicios</a>
                                     <ul class="dropdown triangle">
                                         <li><a href="servicio1.html">Uñas</a></li>
                                         <li><a href="servicio4.html">Depilación</a></li>
@@ -89,48 +88,10 @@
                                         <li><a href="servicio6.html">Servicios Especiales</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" title="Tienda">Tienda</a>
-                                    <div class="megamenu">
-                                        <div class="megamenu-row">
-                                            <div class="col3 clearfix">
-                                                <ul>
-                                                    <li>
-                                                        <h6>Insumos para Salones</h6>
-                                                    </li>
-                                                    <li><a href="#">Beetroot collection</a></li>
-                                                    <li><a href="#">Lobster ravioli</a></li>
-                                                    <li><a href="#">Pollo farcito</a></li>
-                                                </ul>
-                                                <ul>
-                                                    <li>
-                                                        <h6>3 Step Gelpolish</h6>
-                                                    </li>
-                                                    <li><a href="#">organic egg</a></li>
-                                                    <li><a href="#">Beetroot collection</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col6">
-                                                <div class="megamenu_carousel owl-carousel">
-                                                    <div class="single_carousel">
-                                                        <img src="images/mega_carousel1.jpg" class="img img-responsive" alt="mega_carousel">
-                                                    </div>
-                                                    <div class="single_carousel">
-                                                        <img src="images/mega_carousel2.png" class="img img-responsive" alt="mega_carousel">
-                                                    </div>
-                                                    <div class="single_carousel">
-                                                        <img src="images/mega_carousel3.png" class="img img-responsive" alt="mega_carousel">
-                                                    </div>
-                                                    <div class="single_carousel">
-                                                        <img src="images/mega_carousel4.png" class="img img-responsive" alt="mega_carousel">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/col-->
-                                        </div>
-                                    </div>
+                                <li><a href="https://oficinadelaestetica.cl/directorio/tienda/" title="Tienda">Tienda</a>
+                                    
                                 </li>
-                                <li><a href="blog_left_sidebar.html" title="Blog">Blog</a>
-                                </li>
+                                
                                 <li><a href="#book" title="Contacto">Contacto</a></li>
                             </ul>
                             </li>
@@ -380,26 +341,37 @@
                         <p></p>
                     </div>
                     <div class="session_booking_wrapper mt_45">
-                        <form action="contact.php" method="post" class="clearfix">
-                            <input type="text" class="form-control" id="client_name" placeholder="Nombre" required />
-                            <input type="text" class="form-control" id="phone_number" placeholder="Telefono" />
-                            <input type="email" class="form-control" id="client_Email" placeholder="Email" required />
+					
+					
+                        <form action="contact.php" method="post" class="clearfix" onsubmit="Gracias por escribir, te contactaremos en breve" autocomplete="on">
+						
+							<input type="text" name="nombre" class="form-control" id="inputName" placeholder="Nombre" required>
+                            <input type="text" name="telefono" class="form-control" id="inputTelefono" placeholder="Telefono" required />
+                            <input type="email" name="mail" class="form-control" id="inputEmail" placeholder="Email" required />
+							
                             <div class="input-group date form-control" id="datetimepicker1">
-                                <input type="text" readonly="readonly" class="form-control" placeholder="Fecha" required />
+                                <input type="text" readonly="readonly" name="datetime" class="form-control" placeholder="Fecha" required />
                                 <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
                             </div>
-                            <select class="form-control wide mr_30" name="beauty-service" required>
+
+							
+                            <select class="form-control wide mr_30" multiple name="service" name="beauty-service" id="inputBeauty-service" required>
                                 <option selected>Servicio</option>
                                 <option value="facial">Facial</option>
-                                <option value="nailCare">Manicure/Pedicure</option>
-                                <option value="eyeCare">Pestañas</option>
-                                <option value="waxing">Depilacion</option>
-                                <option value="makeup">Capilar</option>
+                                <option value="manicure-pedicure">Manicure/Pedicure</option>
+                                <option value="pestanas">Pestañas</option>
+                                <option value="depilacion">Depilacion</option>
+                                <option value="capilar">Capilar</option>
                             </select>
-                            <textarea name="msg-area" id="booking-msg" cols="30" rows="4" placeholder="Mensaje (Opcional)"></textarea>
+						
+                            <textarea name="msg_area" id="booking_msg" cols="30" rows="4" placeholder="Mensaje" required></textarea>
+
                             <button type="submit">Agendar Cita</button>
+							
+					
+							
                         </form>
                     </div>
                 </div>
@@ -428,72 +400,72 @@
                     <div class="product_carousel_wrapper owl-carousel owl-theme" id="product_carousel">
                         <!--product-1-->
                         <div class="single_carousel">
-                            <img src="images/product2.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/lamp9w-300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$180.95</h6>
+                                <h6 class="color_ff mb_10">$18.000</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Retexturing Activator</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Lampara LED UV 24 W</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/200/">Comprar</a>
                             </div>
                         </div>
                         <!--product-2-->
                         <div class="single_carousel">
-                            <img src="images/product6.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/timbre-300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$100.55</h6>
+                                <h6 class="color_ff mb_10">$4.500</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Herbal Cleanser 4 oz.</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Timbres para diseños</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/215/">Comprar</a>
                             </div>
                         </div>
                         <!--product-3-->
                         <div class="single_carousel">
-                            <img src="images/product7.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/polvoHolographic--300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$120.95</h6>
+                                <h6 class="color_ff mb_10">$5.000</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Blemish + Age Defense</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Polvos cromados</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/263/">Comprar</a>
                             </div>
                         </div>
                         <!--product-4-->
                         <div class="single_carousel">
-                            <img src="images/product1.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/basePermanente-300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$180.95</h6>
+                                <h6 class="color_ff mb_10">$3.000</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Retexturing Activator</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Esmaltes Permanentes</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/esmalte-permanente-color/">Comprar</a>
                             </div>
                         </div>
                         <!--product-5-->
                         <div class="single_carousel">
-                            <img src="images/product3.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/dremel-300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$100.95</h6>
+                                <h6 class="color_ff mb_10">$8.000</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Herbal Cleanser 4 oz.</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Dremel</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/230/">Comprar</a>
                             </div>
                         </div>
                         <!--product-6-->
                         <div class="single_carousel">
-                            <img src="images/product4.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/uv-gel-300x301.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$120.95</h6>
+                                <h6 class="color_ff mb_10">$4.800</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Blemish + Age Defense</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Gel UV</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/214/">Comprar</a>
                             </div>
                         </div>
                         <!--product-7-->
                         <div class="single_carousel">
-                            <img src="images/product5.jpg" alt="product" class="img img-responsive">
+                            <img src="https://oficinadelaestetica.cl/directorio/wp-content/uploads/2018/05/molde-acrilico-300x300.jpg" alt="product" class="img img-responsive">
                             <div class="product_hover text-center">
-                                <h6 class="color_ff mb_10">$180.95</h6>
+                                <h6 class="color_ff mb_10">$2.500</h6>
                                 <div class="divider"></div>
-                                <p class="color_ff mt_10 mb_15">Retexturing Activator</p>
-                                <a href="#">Buy Now</a>
+                                <p class="color_ff mt_10 mb_15">Molde Autoadhesivos</p>
+                                <a href="https://oficinadelaestetica.cl/directorio/product/240/">Comprar</a>
                             </div>
                         </div>
                         <!--/carousel-->
@@ -506,97 +478,7 @@
     <!-- ======================================= 
             ==End Product Carousel section== 
         =======================================-->
-    <!-- ======================================= 
-            ==Start Blog section==  
-    =======================================-->
-    <section class="blog_section ptb_90">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12-12 col-md-12 col-lg-12">
-                    <div class="section_title pb_60 text-center">
-                        <h3 class="color_72 fw_500 pb_10">Blog</h3>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-            <div class="row">
-                <!--blog 1-->
-                <div class="col-md-4">
-                    <div class="single_blog">
-                        <div class="blog_img pos_relative">
-                            <div class="img_area">
-                                <img src="images/blog1.jpg" alt="blog img" class="img img-responsive">
-                            </div>
-                            <div class="brand clearfix">
-                                <ul class="nav-pills">
-                                    <li><i class="fa fa-heart"></i><a href="#">18</a></li>
-                                    <li><i class="fa fa-commenting-o"></i><a href="#">10</a></li>
-                                    <li class="mr_0"><i class="fa fa-folder-open"></i><a href="#">Makeup Tips</a></li>
-                                    <li class="pull-right gallery"><a href="#"><i class="fa fa-picture-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="blog_content">
-                            <a href="#" class="title fw_500 pt_20">Nivea for men’s sensitive hydro gel the perfect cure.</a>
-                            <p class="ptb_20">The power of golden ratio typography cannot be understated. By choosing the line-height of your primary text.</p>
-                            <a href="#" class="readmore" title="Read More for Details" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--blog 2-->
-                <div class="col-md-4">
-                    <div class="single_blog">
-                        <div class="blog_img pos_relative">
-                            <div class="img_area">
-                                <img src="images/blog2.jpg" alt="blog img" class="img img-responsive">
-                            </div>
-                            <div class="brand clearfix">
-                                <ul class="nav-pills">
-                                    <li><i class="fa fa-heart"></i><a href="#">18</a></li>
-                                    <li><i class="fa fa-commenting-o"></i><a href="#">10</a></li>
-                                    <li class="mr_0"><i class="fa fa-folder-open"></i><a href="#">Body Message</a></li>
-                                    <li class="pull-right gallery"><a href="#"><i class="fa fa-play-circle"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="blog_content">
-                            <a href="#" class="title fw_500 pt_20">Nivea for men’s sensitive hydro gel the perfect cure.</a>
-                            <p class="ptb_20">The power of golden ratio typography cannot be understated. By choosing the line-height of your primary text.</p>
-                            <a href="#" class="readmore" title="Read More for Details" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--blog 3-->
-                <div class="col-md-4">
-                    <div class="single_blog">
-                        <div class="blog_img pos_relative">
-                            <div class="img_area">
-                                <img src="images/blog3.jpg" alt="blog img" class="img img-responsive">
-                            </div>
-                            <div class="brand clearfix">
-                                <ul class="nav-pills">
-                                    <li><i class="fa fa-heart"></i><a href="#">18</a></li>
-                                    <li><i class="fa fa-commenting-o"></i><a href="#">10</a></li>
-                                    <li class="mr_0"><i class="fa fa-folder-open"></i><a href="#">Spa Tips</a></li>
-                                    <li class="pull-right gallery"><a href="#"><i class="fa fa-picture-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="blog_content">
-                            <a href="#" class="title fw_500 pt_20">Nivea for men’s sensitive hydro gel the perfect cure.</a>
-                            <p class="ptb_20">The power of golden ratio typography cannot be understated. By choosing the line-height of your primary text.</p>
-                            <a href="#" class="readmore" title="Read More for Details" target="_blank">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!--/col-->
-            </div>
-            <!--/row-->
-        </div>
-    </section>
-    <!-- ======================================= 
-            ==End blog section== 
-    =======================================-->
+  
     <!-- ======================================= 
             ==Start call to action section==  
     =======================================-->
@@ -628,36 +510,25 @@
                         <p> Oficina de la Estetica, Estética a su medida</p>
                         <address>
                             <p class="address"><i class="fa fa-home"></i><span>Oficina Central:</span> Monjitas 520, ofc 19 Santiago.</p>
+                            <p class="address"><i class="fa fa-home"></i><span>Sede 2:</span> Concepcion</p>
                             <p class="phone"><i class="fa fa-phone"></i><span>Contacto:</span><a href="tel:+56-982239304">+56-982239304</a> </p>
                             <p class="email"><i class="fa fa-envelope"></i><span>Email:</span> <a href="mailto:info@oficinadelaestetica.cl">info@oficinadelaestetica.cl</a></p>
                         </address>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="single_widget recent_post_widget">
-                        <h5>Post Recientes</h5>
-                        <ul>
-                            <li>
-                                <p>The power of golden ratio typography cannot be understated. By choosing the..</p>
-                                <span>June 23, 2016</span>
-                                <a href="#">Leer más</a>
-                            </li>
-                            <li>
-                                <p>The power of golden ratio typography cannot be understated. By choosing the..</p>
-                                <span>June 23, 2016</span>
-                                <a href="#">Leer más</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
+               
+                <div class="col-md-4 col-md-offset-4">
                     <div class="single_widget newsletter_widget">
-                        <h5>Suscribete a nuestro Newsletter</h5>
+                        <h5>Suscribete para recibir ofertas</h5>
+						
                         <form action="newsletter.php" method="post" class="clearfix">
-                            <input type="text" placeholder="Nombre" id="name" class="form-control">
-                            <input type="email" placeholder="Email" id="email" class="form-control">
+                            <input type="text" placeholder="Nombre" name="nombre" id="inputNombre" class="form-control">
+                            <input type="email" placeholder="Email" name="mail" id="inputEmail" class="form-control">
+							
+							<script> window.alert("nombre+email:",nombre,'+',mail);</script>
                             <button type="submit">Enviar</button>
                         </form>
+						
                     </div>
                 </div>
                 <!--/col-->
@@ -674,7 +545,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>&copy; 2018 All rights reserved. Developed <i class="fa fa-heart"></i> by <a target="_blank" href="https://kurewen.cl">Kurewen Labs</a></p>
+                    <p>&copy; 2018 All rights reserved. Developed by <a target="_blank" href="https://kurewen.cl">Kurewen Labs</a></p>
                 </div>
             </div>
         </div>

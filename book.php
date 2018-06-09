@@ -1,6 +1,6 @@
 <?php
 
- if(!empty($_POST['nombre'])  AND !empty($_POST['telefono'])  AND !empty($_POST['service']) AND !empty($_POST['mail'])  AND !empty($_POST['datetime']) AND !empty($_POST['msg_area']))
+ if(!empty($_POST['nombre'])  AND !empty($_POST['telefono'])  AND !empty($_POST['service']) AND !empty($_POST['mail'])  AND !empty($_POST['datetime']) )
  {
 
   $to ="info@oficinadelaestetica.cl";
@@ -29,10 +29,7 @@
       <td align='center' bgcolor='#FFFFCC'><strong>Fecha Sujerida:</strong></td>
       <td align='left'>$_POST[datetime]</td>
     </tr>
-    <tr>
-      <td align='center' bgcolor='#FFFFCC'><strong>Comentario:</strong></td>
-      <td align='left'>$_POST[msg_area]</td>
-    </tr>
+    
   </table>
   ";
   

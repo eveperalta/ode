@@ -2211,7 +2211,7 @@ priceing_section .single_price_list>p {
 
 .cta_section,
 .quick_support_section {
-    background: url("images/gallerybg.jpg") no-repeat;
+    background: url("") no-repeat;
     background-size: cover;
     padding: 50px 0;
     position: relative;
